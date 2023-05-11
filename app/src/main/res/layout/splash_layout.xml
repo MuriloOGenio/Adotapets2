@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center_vertical"
+    android:background="#ECBC69"
     android:orientation="vertical"
     tools:context=".SplashActivity">
 
@@ -21,7 +22,7 @@
         android:layout_gravity="center_horizontal"
         android:fontFamily="@font/tangerinebold"
         android:text="Adota-Pets"
-        android:textColor="#E4A42A"
+        android:textColor="#000"
         android:textSize="60sp"
         android:textStyle="bold" />
 
