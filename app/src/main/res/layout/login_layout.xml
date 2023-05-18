@@ -4,10 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".LoginActivity"
     android:background="#D6A459"
-    >
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,8 +17,8 @@
         <ImageView
             android:layout_width="160dp"
             android:layout_height="160dp"
-            android:layout_marginBottom="30dp"
             android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="30dp"
             android:src="@drawable/logo" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -39,6 +38,7 @@
             app:startIconDrawable="@drawable/baseline_pets">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtUsuario"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Insira o Usuário"
@@ -63,6 +63,7 @@
             app:startIconDrawable="@drawable/baseline_lock">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/txtSenha"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Insira a senha"
@@ -72,6 +73,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <TextView
+            android:id="@+id/lblCadastrarUsuario"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
@@ -81,11 +83,12 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_marginTop="50dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/btnEntrar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
@@ -97,6 +100,7 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="3dp"
                 android:layout_weight="1"
+                android:id="@+id/btnSair"
                 android:text="Sair" />
 
         </LinearLayout>
