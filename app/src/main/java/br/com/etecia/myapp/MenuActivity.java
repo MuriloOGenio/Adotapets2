@@ -3,12 +3,29 @@ package br.com.etecia.myapp;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 
-public class MenuActivity extends AppCompatActivity {
+import com.google.android.material.card.MaterialCardView;
 
+public class MenuActivity extends AppCompatActivity implements View.OnClickListener {
+    MaterialCardView idmenuPets, idmenuRacoes,idmenuParceiros,idmenuLocalizar,idmenuDoacoes,idmenuServicos;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.menu_layout);
+
+        idmenuPets = findViewById(R.id.menuPets);
+        idmenuRacoes = findViewById(R.id.menuRacoes);
+        idmenuServicos = findViewById(R.id.menuServicos);
+        idmenuParceiros = findViewById(R.id.menuParceiros);
+        idmenuLocalizar = findViewById(R.id.menuLocalizar);
+        idmenuDoacoes = findViewById(R.id.menuDoacoes);
+
+
+    }
+
+    @Override
+    public void onClick(View v) {
+
     }
 }
