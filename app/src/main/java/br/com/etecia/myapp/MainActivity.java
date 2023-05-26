@@ -10,5 +10,12 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        pessoa pessoa = new pessoa();
+
+        pessoa.name = "Murilo";
+        pessoa.email = "opa@eita";
+        pessoa.idade = 59;
+        pessoa.falar();
     }
 }
