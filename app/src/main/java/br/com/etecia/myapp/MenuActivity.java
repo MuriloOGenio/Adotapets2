@@ -36,25 +36,6 @@ public class MenuActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
-            case R.id.menuPets:
-                startActivity(new Intent(getApplicationContext(), PetsActivity.class));
-                break;
-            case R.id.menuRacoes:
-                startActivity(new Intent(getApplicationContext(), AlimentosActivity.class));
-                break;
-            case R.id.menuDoacoes:
-                startActivity(new Intent(getApplicationContext(), DoacoesActivity.class));
-                break;
-            case R.id.menuParceiros:
-                startActivity(new Intent(getApplicationContext(), ParceirosActivity.class));
-                break;
-            case R.id.menuLocalizar:
-                startActivity(new Intent(getApplicationContext(), LocalizarActivity.class));
-                break;
-            case R.id.menuServicos:
-                startActivity(new Intent(getApplicationContext(), ServicosActivity.class));
-                break;
-
 
         }
 
